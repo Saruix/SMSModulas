@@ -31,5 +31,6 @@
         </table>
     </div>
     
+    <script src="./Assets/JS/Model.jss"></script>
 </body>
 </html>

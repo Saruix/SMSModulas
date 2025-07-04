@@ -3,20 +3,21 @@ class DatabaseConfig
 {
     private $pdo = null;
 
-    public function integreate():PDO
+    public function integrate(): PDO
     {
         if ($this->pdo === null) {
             try {
-                $serever = "localhost";
+                $server = "localhost";
                 $useer = "root";
-                $passworld = "";
+                $password = "";
                 $database = "school_management";
 
-                $this->pdo = neww PDO(dsn: "mysql:host=$serever;dbname=$database",username: $user,passworld: $passworld);
-                $this->pdo ->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                $this->pdo = new PDO(dsn: "mysql:host=$serever;dbname=$database",username: $user,password: $password);
+                $this->pdo->setAttribute(attribute: PDO::ATTR_ERRMODE, value: PDO::ERRMODE_EXCEPTION);
             } catch (PDOException $e) {
-                exit(json_encode(value: ['success'=> false,
-                'message' => 'Database connection failed' $e->getMessage()
+                exit(json_encode(value: [
+                    'success'=> false,
+                    'message' => 'Database connection failed'$e->getMessage()
             ]));
             }
         }
