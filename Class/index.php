@@ -10,7 +10,7 @@
     <div>
         <Form action="" method="post">
             <input type="text" name="class_name" placeholder="Class Name">
-            <input type="text" name="class_code" placeholder="Class Name">
+            <input type="text" name="class_code" placeholder="Class Code">
             <input type="text" name="class_teacher" placeholder="Class Teacher Name">
             <input type="text" name="Class_addedDate" placeholder="Class Added Date">
             <button type="submit" name="addClass">Add Class</button>
