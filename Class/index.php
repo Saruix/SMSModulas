@@ -1,10 +1,13 @@
-f<!DOCTYPE html>
+f
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Class Registration Form</title>
 </head>
+
 <body>
 
     <div>
@@ -28,9 +31,17 @@ f<!DOCTYPE html>
                     <th>Action</th>
                 </tr>
             </thead>
+        <body>
+            <?php
+            include './Api/Auto/AutoLoaderIndex.php';
+            $classes = new Classes();
+            $classes->fetchClasses();
+            ?>
+        </body>        
         </table>
     </div>
-    
+
     <script src="./Assets/JS/Model.jss"></script>
 </body>
+
 </html>
